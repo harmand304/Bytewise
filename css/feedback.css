@@ -1,0 +1,33 @@
+body {
+  overflow-x: hidden;
+  background-color: #FFF9F5;
+}
+.navbar{
+  background-color: rgb(13, 12, 12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; 
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/star.png");
+  background-size: cover;
+}
+
+.rating input:checked ~ label {
+  background-image: url("../images/star-filed.png");
+}

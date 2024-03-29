@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+  background-color: #FFF9F5;
+}
+.navbar{
+  background-color: rgb(13, 12, 12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; 
+  
+}
+.hero {
+  background-image: url("../images/Hero\ Image.png");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  width: 100%;
+  color: white;
+}
+.hero-text {
+  color: white;
+}
+.round {
+  border-radius: 12px;
+}
+#cards:hover{
+  background-color:#E3E4E6;
+  border-radius: 12px;
+}
+@media(max-width:767px) {
+  .hero{
+    background-position: center;
+    height: 70vh;
+  }
+}
